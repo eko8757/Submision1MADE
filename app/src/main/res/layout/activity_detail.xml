@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.submision1made_gdk2019.DetailActivity">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/poster_a_star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        tools:text="A Star Is Reborn"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/img_detail"
+        app:layout_constraintTop_toTopOf="@id/img_detail" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/featured_crew"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/title_detail"
+        app:layout_constraintTop_toBottomOf="@id/title_detail" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/director"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/screenplay"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/txt2" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/story"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt3"
+        app:layout_constraintTop_toBottomOf="@id/txt3" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        tools:text="name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt2"
+        app:layout_constraintStart_toEndOf="@id/txt2"
+        app:layout_constraintTop_toTopOf="@id/txt2" />
+
+    <TextView
+        android:id="@+id/tv_screenplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        tools:text="scren"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt3"
+        app:layout_constraintStart_toEndOf="@id/txt3"
+        app:layout_constraintTop_toTopOf="@id/txt3" />
+
+    <TextView
+        android:id="@+id/tv_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        tools:text="story"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt4"
+        app:layout_constraintStart_toEndOf="@id/txt4"
+        app:layout_constraintTop_toTopOf="@id/txt4" />
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/add_favorite"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/txt4"
+        app:layout_constraintTop_toBottomOf="@id/txt4"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/img_watchlist"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/add_wachlist"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@id/img_favorite"
+        app:layout_constraintTop_toTopOf="@id/img_favorite"
+        app:layout_constraintBottom_toBottomOf="@id/img_favorite"
+        android:layout_marginStart="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/img_rate"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/rate"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@id/img_watchlist"
+        app:layout_constraintTop_toTopOf="@id/img_watchlist"
+        app:layout_constraintBottom_toBottomOf="@id/img_watchlist"
+        android:layout_marginStart="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_detail">
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            tools:text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content. Replacing the actual content with placeholder text allows designers to design the form of the content before the content itself has been produced"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
