@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
-import com.example.submision1made2019.MainActivity
+import com.example.submision1made2019.ui.activity.MainActivity
 import com.example.submision1made2019.R
 import org.jetbrains.anko.*
 
